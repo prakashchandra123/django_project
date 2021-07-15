@@ -1,0 +1,12 @@
+<h1><a href="{% url 'home' %}">Start Again</a></h1>
+<h1>There are {{ worldlist }} words of the string</h1>
+<h1>Total numbers of words:</h1>
+<h1>NAME:</h1>
+{{ fulltext }}
+<h1>Word Count:</h1>
+{% for counttotal in worddictionary %}
+{{ word}}
+<br/>
+{{counttotal}}
+<br/>
+{% endfor %}
